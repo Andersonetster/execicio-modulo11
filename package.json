@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Andersonetster/execicio-modulo11#readme",
   "dependencies": {
+    "faker": "^6.6.6",
+    "faker-br": "^0.4.1",
     "node": "^17.7.1"
   },
   "devDependencies": {
