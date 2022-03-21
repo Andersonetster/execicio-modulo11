@@ -14,8 +14,8 @@ context('Funcionalidade Login', () => {
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, aluno_ebac')
     });
 
-    it ('deve exibir uma mensagem de erro ao inseir usuário invalido' , () => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+    it('deve exibir uma mensagem de erro ao inseir usuário invalido' , () => {
+        
         cy.get('#username').type('aluno_ebac@testecom')
         cy.get('#password').type('teste@testecom')
         cy.get('.woocommerce-form > .button').click() 
@@ -23,7 +23,7 @@ context('Funcionalidade Login', () => {
     })
 
     it('deve exibir uma mensagem de erro ao inseir usuário senha invalida' , () => {
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+        
         cy.get('#username').type('aluno_ebac@teste.com')
         cy.get('#password').type('teste@testecom')
         cy.get('.woocommerce-form > .button').click() 
